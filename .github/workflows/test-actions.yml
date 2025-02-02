@@ -1,0 +1,16 @@
+name: Test Action
+
+on:
+  push:
+    branches:
+      - main  # This runs the workflow on every push to the main branch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: 22f3002236@ds.study.iitm.ac.in  # Your email as step name
+        run: echo "Hello, world!"
